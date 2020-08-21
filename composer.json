@@ -1,0 +1,36 @@
+{
+    "name": "ilzrv/laravel-queue-size",
+    "description": "Laravel Queue Size Command",
+    "require": {
+        "illuminate/console": "^7.25",
+        "illuminate/queue": "^7.25"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "orchestra/testbench": "^5.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilia Lazarev",
+            "email": "me@ilzrv.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ilzrv\\LaravelQueueSize\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ilzrv\\LaravelQueueSize\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ilzrv\\LaravelQueueSize\\ServiceProvider"
+            ]
+        }
+    }
+}
