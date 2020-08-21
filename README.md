@@ -44,5 +44,5 @@ The Laravel Queue Size Command is open-sourced software licensed under the [MIT 
 [ico-downloads]: https://img.shields.io/packagist/dt/ilzrv/laravel-queue-size
 
 [link-packagist]: https://packagist.org/packages/ilzrv/laravel-queue-size
-[link-tests]: https://github.com/ilzrv/laravel-queue-size/workflows/tests
+[link-tests]: https://github.com/ilzrv/laravel-queue-size/actions?query=workflow:tests
 [link-downloads]: https://packagist.org/packages/ilzrv/laravel-queue-size
