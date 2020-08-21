@@ -1,7 +1,7 @@
 # Laravel Queue Size Command
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE)
-[![Build Status][ico-travis]][link-travis]
+[![Build Status][ico-tests]][link-tests]
 [![Total Downloads][ico-downloads]][link-downloads]
 
 This package offers an artisan command to check queue size in your application.
@@ -40,9 +40,9 @@ The Laravel Queue Size Command is open-sourced software licensed under the [MIT 
 
 [ico-version]: https://img.shields.io/packagist/v/ilzrv/laravel-queue-size
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg
-[ico-travis]: https://img.shields.io/travis/ilzrv/laravel-queue-size
+[ico-tests]: https://github.com/ilzrv/laravel-queue-size/workflows/tests/badge.svg
 [ico-downloads]: https://img.shields.io/packagist/dt/ilzrv/laravel-queue-size
 
 [link-packagist]: https://packagist.org/packages/ilzrv/laravel-queue-size
-[link-travis]: https://travis-ci.org/ilzrv/laravel-queue-size
+[link-tests]: https://github.com/ilzrv/laravel-queue-size/workflows/tests
 [link-downloads]: https://packagist.org/packages/ilzrv/laravel-queue-size
