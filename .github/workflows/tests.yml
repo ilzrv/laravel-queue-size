@@ -14,10 +14,13 @@ jobs:
         include:
           - laravel: 5.6.*
             testbench: 3.6.*
+            phpunit: 7.*
           - laravel: 6.*
             testbench: 4.*
+            phpunit: 9.*
           - laravel: 7.*
             testbench: 5.*
+            phpunit: 9.*
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
     steps:
       - name: Checkout Code
@@ -35,7 +38,7 @@ jobs:
           coverage: none
       - name: Install Dependencies
         run: |
-          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" --no-interaction --no-update
+          composer require "laravel/framework:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.testbench }}" "phpunit/phpunit:${{ matrix.phpunit }}" --no-interaction --no-update
           composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
       - name: Execute tests
         run: vendor/bin/phpunit
