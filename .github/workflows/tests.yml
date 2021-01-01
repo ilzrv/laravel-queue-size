@@ -19,6 +19,9 @@ jobs:
             testbench: 5.*
           - laravel: 8.*
             testbench: 6.*
+        exclude:
+          - php: 8.0
+            dependency-version: prefer-lowest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
